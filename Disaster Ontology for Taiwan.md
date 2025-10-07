@@ -64,7 +64,7 @@
 OSM是一個全球性、開源、由社群協作編輯的世界地圖。它在人道救援領域的價值已由人道主義OpenStreetMap團隊（HOT）等組織在全球多次災難中得到充分證明。HOT的運作模式——在災後迅速動員全球志工，利用衛星影像繪製災區的道路、建築等關鍵地理資訊——已成為現代數位人道救援的典範。
 
 #### 整合的力量：從靜態報告到動態地圖
-透過將OSM標籤（tags）作為本體論的核心設計元素，我們能將災害資訊從靜態的報表轉化為一張動態的、即時的地圖。一則關於建築物倒塌的報告，將不再僅僅是試算表中的一行文字，而是一個可以在地圖上即時更新的地理物件（例如，標記為 `building=collapsed`）[24]。這使得指揮官能夠立即對災害影響範圍進行視覺化分析、規劃救援隊伍的路徑、並識別受影響的社區。這種深度整合，是本報告所提解決方案的關鍵技術創新。它將台灣政府推動開放資料的政策意圖，與全球公民科技社群的實踐成果相結合，為建立一個真正具備韌性的資料生態系奠定了基礎。
+透過將OSM標籤（tags）作為本體論的核心設計元素，我們能將災害資訊從靜態的報表轉化為一張動態的、即時的地圖。一則關於建築物倒塌的報告，將不再僅僅是試算表中的一行文字，而是一個可以在地圖上即時更新的地理物件（例如，標記為 `building=collapsed`）。這使得指揮官能夠立即對災害影響範圍進行視覺化分析、規劃救援隊伍的路徑、並識別受影響的社區。這種深度整合，是本報告所提解決方案的關鍵技術創新。它將台灣政府推動開放資料的政策意圖，與全球公民科技社群的實踐成果相結合，為建立一個真正具備韌性的資料生態系奠定了基礎。
 
 ---
 
@@ -98,11 +98,11 @@ OSM是一個全球性、開源、由社群協作編輯的世界地圖。它在�
 
 *   **避難所與疏散點 (Shelters & Evacuation Points)**：提供指定避難場所的詳細資訊。
     *   **本體論屬性**：`shelter.id`, `shelter.name`, `shelter.capacity.persons`, `shelter.facilities` (例如：水、電、無障礙設施), `shelter.status` (例如：開放、額滿、關閉)。
-    *   **OSM整合**：在OSM地圖上使用 `amenity=shelter` 標記，並可透過 `shelter_type=*` 提供更詳細的分類 [35]。本體論提供了連結至此靜態地圖特徵的動態資訊（如收容人數、開放狀態）。
+    *   **OSM整合**：在OSM地圖上使用 `amenity=shelter` 標記，並可透過 `shelter_type=*` 提供更詳細的分類。本體論提供了連結至此靜態地圖特徵的動態資訊（如收容人數、開放狀態）。
 
 *   **資源盤點 (Resource Inventories)**：編目應變資產，包括車輛、裝備、專業人員等。
     *   **本體論屬性**：`resource.id`, `resource.type` (例如：救護車、挖土機、醫療團隊), `resource.quantity`, `resource.location`, `resource.status` (例如：可用、已派遣)。
-    *   **標準整合**：此結構是即時資源請求的前置作業，與**緊急資料交換語言-資源訊息 (EDXL-RM)** 的核心概念一致 [36, 37]。它在災害發生前回答了「我們擁有什麼資源？它們在哪裡？」的關鍵問題。
+    *   **標準整合**：此結構是即時資源請求的前置作業，與**緊急資料交換語言-資源訊息 (EDXL-RM)** 的核心概念一致。它在災害發生前回答了「我們擁有什麼資源？它們在哪裡？」的關鍵問題。
 
 ### 2.2 第二階段：應變（災害緊急應變）- 即時共通作戰圖像與協調
 
@@ -130,7 +130,7 @@ OSM是一個全球性、開源、由社群協作編輯的世界地圖。它在�
 
 *   **生命線狀態：能源、通訊、交通 (Energy, Communications, Transportation)**
     *   **本體論屬性**：`lifeline.transportation.road.id`, `lifeline.transportation.road.status` (例如：可通行、中斷、損壞), `lifeline.energy.grid_status`, `lifeline.comms.network_status`。
-    *   **OSM整合 (關鍵)**：這是與HOT方法論整合最關鍵之處。一條中斷的道路在OSM上應標記 `practicability=no` [24]。一棟損毀的建築應標記 `building=collapsed` 或更細緻的 `building:damage=severe` [24]。本體論中的紀錄將直接連結至OSM的way/node ID，在地圖上提供即時的地面實況。
+    *   **OSM整合 (關鍵)**：這是與HOT方法論整合最關鍵之處。一條中斷的道路在OSM上應標記 `practicability=no` [24]。一棟損毀的建築應標記 `building=collapsed` 或更細緻的 `building:damage=severe`。本體論中的紀錄將直接連結至OSM的way/node ID，在地圖上提供即時的地面實況。
 
 *   **資源請求與派遣 (Resource Requests & Deployment)**
     *   **本體論屬性**：`resource_request.id`, `resource_request.type`, `resource_request.quantity`, `resource_request.destination`, `resource_request.status` (例如：已請求、已派遣、已抵達)。
