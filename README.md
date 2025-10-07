@@ -114,7 +114,7 @@ This work is licensed under the [Creative Commons Attribution 4.0 International 
 
 以下の方法で貢献できます：
 
-* **レビューとフィードバック**: [Issues](https://github.com/your-repo/issues)セクションで、オントロジー設計に関する質問や提案を提起してください。
+* **レビューとフィードバック**: [Issues](https://github.com/GeoThings/disaster-ontology/issues) セクションで、オントロジー設計に関する質問や提案を提起してください。
 * **議論への参加**: 現場で遭遇したデータ交換の課題を共有してください。
 * **変更の提案**: プルリクエストを通じて、直接変更案を提案してください。
 
