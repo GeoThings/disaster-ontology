@@ -37,8 +37,8 @@
 ## 授權
 
 本計畫內容採用 [創用 CC 姓名標示 4.0 國際 授權條款](https://creativecommons.org/licenses/by/4.0/) 進行授權。
-```eof
-```markdown:GitHub README (English):README.en.md
+
+
 # A Unified Disaster Information Ontology for Taiwan
 
 This is an open-source initiative to establish a unified, open, and machine-readable data standard for disaster information in Taiwan. Our goal is to break down information silos, enhance collaboration efficiency among response units, and strengthen national disaster resilience.
@@ -78,8 +78,8 @@ Let's work together to build a more resilient future for Taiwan.
 ## License
 
 This work is licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
-```eof
-```markdown:GitHub README (Japanese):README.ja.md
+
+
 # 台湾における統一災害情報オントロジー
 
 これは、台湾のために統一された、オープンで機械判読可能な災害情報標準を確立するためのオープンソース・イニシアティブです。私たちの目標は、情報のサイロ化を解消し、災害対応における各組織間の連携効率を高め、国家全体の防災レジリエンスを強化することです。
@@ -119,6 +119,5 @@ This work is licensed under the [Creative Commons Attribution 4.0 International 
 ## ライセンス
 
 この著作物は、[クリエイティブ・コモンズ 表示 4.0 国際 ライセンス](https://creativecommons.org/licenses/by/4.0/)の下に提供されています。
-```eof
 
-希望這次您能順利看到並使用這些檔案。如果還有任何問題，請隨時告訴我。
+
