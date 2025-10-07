@@ -28,7 +28,7 @@
 
 您可以透過以下方式貢獻：
 
-* **檢視與回饋**：在 [Issues](https://github.com/your-repo/issues) 中提出您對本體論設計的建議或問題。
+* **檢視與回饋**：在 [Issues](https://github.com/GeoThings/disaster-ontology/issues) 中提出您對本體論設計的建議或問題。
 * **參與討論**：分享您在實務上遇到的資料交換挑戰。
 * **提交修改**：透過 Pull Request 直接貢獻您的修改建議。
 
@@ -71,7 +71,7 @@ This is an open project, and we sincerely invite all stakeholders passionate abo
 
 You can contribute in the following ways:
 
-* **Review and Feedback**: Raise questions or suggestions about the ontology design in the [Issues](https://github.com/your-repo/issues) section.
+* **Review and Feedback**: Raise questions or suggestions about the ontology design in the [Issues](https://github.com/GeoThings/disaster-ontology/issues) section.
 * **Join the Discussion**: Share the data exchange challenges you've encountered in the field.
 * **Submit Changes**: Contribute your proposed modifications directly via Pull Requests.
 
