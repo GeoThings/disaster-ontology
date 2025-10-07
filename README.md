@@ -39,7 +39,7 @@
 本計畫內容採用 [創用 CC 姓名標示 4.0 國際 授權條款](https://creativecommons.org/licenses/by/4.0/) 進行授權。
 
 ##
-##
+
 
 # A Unified Disaster Information Ontology for Taiwan
 
@@ -82,7 +82,7 @@ Let's work together to build a more resilient future for Taiwan.
 This work is licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
 
 ##
-##
+
 
 # 台湾における統一災害情報オントロジー
 
