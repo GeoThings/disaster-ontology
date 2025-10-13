@@ -24,7 +24,7 @@
 
 ## 如何貢獻
 
-這是一個開放的專案，我們誠摯邀請所有關心台灣防災韌性的利害關係人——無論您是政府單位、非營利組織、開發者、或第一線的應變人員——共同參與。
+這是一個開放的專案，我們誠摯邀請所有關心台灣防災韌性的利害關係人——無論您是政府單位、非營利組織、開發者、或第一線的應變人員——共同參與，成為「數位韌性協作聯盟」。
 
 您可以透過以下方式貢獻：
 
@@ -67,7 +67,7 @@ Adopting this open standard will:
 
 ## How to Contribute
 
-This is an open project, and we sincerely invite all stakeholders passionate about Taiwan's disaster resilience—including government agencies, non-profits, developers, and first responders—to participate.
+This is an open project, and we sincerely invite all stakeholders passionate about Taiwan's disaster resilience—including government agencies, non-profits, developers, and first responders—to participate. Together we can be the "Digital Resilience Cooperation Alliance".
 
 You can contribute in the following ways:
 
@@ -110,7 +110,7 @@ This work is licensed under the [Creative Commons Attribution 4.0 International 
 
 ## 貢献の方法
 
-これはオープンなプロジェクトであり、台湾の防災レジリエンスに関心を持つすべてのステークホルダー（政府機関、非営利団体、開発者、第一線の対応者など）の皆様のご参加を心より歓迎いたします。
+これはオープンなプロジェクトであり、台湾の防災レジリエンスに関心を持つすべてのステークホルダー（政府機関、非営利団体、開発者、第一線の対応者など）の皆様のご参加を心より歓迎いたします。私たちは一緒に「デジタルレジリエンス協力同盟」になることができます！
 
 以下の方法で貢献できます：
 
