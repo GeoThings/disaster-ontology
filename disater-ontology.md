@@ -7,26 +7,26 @@
 | 通用 (所有回報) | `actor_id` | 4W-COP 核心原則 (Who)，標示資訊來源，有助於評估資訊可信度。 | `"citizen-uuid-xyz"` | `String`, **必要** |
 | 通用 (所有回報) | `status` | 核心本體論設計，追蹤資訊的生命週期，避免重複處理。 | `"verified"` | `String`, Enum: `unverified`, `verified`, `in_progress`, `resolved`, `invalid` |
 | 通用 (所有回報) | `source` | 核心本體論設計，記錄資訊的接收管道。 | `"citizen_app"` | `String`, Enum: `citizen_app`, `119_dispatch`, `social_media`, `field_surveyor` |
-| **備災與演習** | `asset_type` | 盤點防救災資源與設施，對應災害管理「整備」階段需求 [1, 2]。 | `"shelter"` | `String`, Enum: `shelter`, `resource_depot`, `hospital` |
+| **備災與演習** | `asset_type` | 盤點防救災資源與設施，對應災害管理「整備」階段需求。 | `"shelter"` | `String`, Enum: `shelter`, `resource_depot`, `hospital` |
 | 備災與演習 | `shelter:capacity_persons` | 規劃避難收容能量。 | `500` | `Integer` |
 | 備災與演習 | `shelter:facilities` | 標示避難所特殊設施，如無障礙、寵物友善，滿足多元收容需求。 | `["wheelchair_accessible", "pet_friendly"]` | `Array of Strings` |
-| **風災、水災** | `incident:type` | 參考「各災害規模及通報層級一覽表」 [3] 與「水災災害生活救助辦法」 [4]。 | `"flood"` | `String`, Enum: `flood`, `strong_wind`, `storm_surge` |
-| 風災、水災 | `flood:depth_cm` | 量化淹水災情，對應「住戶淹水救助」標準（淹水達50公分以上） [4]。 | `60` | `Integer` |
-| 風災、水災 | `damage:farmland` | 對應「農田受災救助」 [4]。 | `"流失"` | `String`, Enum: `流失`, `埋沒` |
-| **震災** | `incident:type` | 參考「各災害規模及通報層級一覽表」 [3] 與「風災震災重大火災爆炸災害救助種類及標準」 [5]。 | `"building_collapse"` | `String`, Enum: `earthquake`, `building_collapse`, `landslide` |
-| 震災 | `building:structural_status` | 對應災後建築物緊急評估的紅黃綠標制度，與「不堪居住程度」認定相關 [5]。 | `"unsafe"` | `String`, Enum: `safe` (綠標), `restricted_use` (黃標), `unsafe` (紅標) |
-| 震災 | `damage:building` | 參考「風災震災重大火災爆炸災害救助種類及標準」中對「不堪居住」的具體描述 [5]。 | `"牆壁斷裂、傾斜"` | `String` |
-| **火災、爆炸** | `incident:type` | 參考「各災害規模及通報層級一覽表」 [3] 與「風災震災重大火災爆炸災害救助種類及標準」 [5]。 | `"fire"` | `String`, Enum: `fire`, `explosion` |
-| 火災、爆炸 | `damage:area_sqm` | 量化火災影響範圍，對應災情通報標準（延燒面積超過三千平方公尺） [6]。 | `3500` | `Integer` |
-| **陸上交通事故** | `incident:type` | 參考「各災害規模及通報層級一覽表」 [3] 與交通部相關通報標準 [7, 8]。 | `"traffic_accident"` | `String`, Enum: `traffic_accident`, `rail_accident` |
-| 陸上交通事故 | `traffic:blockage` | 描述交通中斷情況，對應公路與鐵路災情通報要件 [7, 8]。 | `"雙向交通阻斷"` | `String` |
-| **人為災害 (管線、化學品)** | `incident:type` | 參考「各災害規模及通報層級一覽表」 [3, 6] 與人為災害分類 [9]。 | `"gas_leak"` | `String`, Enum: `gas_leak`, `oil_spill`, `chemical_spill`, `power_outage` |
-| 人為災害 (管線、化學品) | `pollution:area_sqm` | 量化污染影響範圍，對應災情通報標準（陸域污染面積） [6]。 | `12000` | `Integer` |
-| **通用災情回報** | `casualties:death` | 所有災害共通的關鍵災情指標，對應各類災害救助標準與通報層級 [3, 4, 5, 6]。 | `3` | `Integer` |
-| 通用災情回報 | `casualties:missing` | 對應「失蹤救助」 [4, 5] 與災情通報標準 [3, 6]。 | `2` | `Integer` |
-| 通用災情回報 | `casualties:injured_severe` | 對應「重傷救助」 [4, 5] 與災情通報標準 [3, 6]。 | `5` | `Integer` |
+| **風災、水災** | `incident:type` | 參考「各災害規模及通報層級一覽表」與「水災災害生活救助辦法」。 | `"flood"` | `String`, Enum: `flood`, `strong_wind`, `storm_surge` |
+| 風災、水災 | `flood:depth_cm` | 量化淹水災情，對應「住戶淹水救助」標準（淹水達50公分以上）。 | `60` | `Integer` |
+| 風災、水災 | `damage:farmland` | 對應「農田受災救助」。 | `"流失"` | `String`, Enum: `流失`, `埋沒` |
+| **震災** | `incident:type` | 參考「各災害規模及通報層級一覽表」與「風災震災重大火災爆炸災害救助種類及標準」。 | `"building_collapse"` | `String`, Enum: `earthquake`, `building_collapse`, `landslide` |
+| 震災 | `building:structural_status` | 對應災後建築物緊急評估的紅黃綠標制度，與「不堪居住程度」認定相關。 | `"unsafe"` | `String`, Enum: `safe` (綠標), `restricted_use` (黃標), `unsafe` (紅標) |
+| 震災 | `damage:building` | 參考「風災震災重大火災爆炸災害救助種類及標準」中對「不堪居住」的具體描述。 | `"牆壁斷裂、傾斜"` | `String` |
+| **火災、爆炸** | `incident:type` | 參考「各災害規模及通報層級一覽表」與「風災震災重大火災爆炸災害救助種類及標準」。 | `"fire"` | `String`, Enum: `fire`, `explosion` |
+| 火災、爆炸 | `damage:area_sqm` | 量化火災影響範圍，對應災情通報標準（延燒面積超過三千平方公尺）。 | `3500` | `Integer` |
+| **陸上交通事故** | `incident:type` | 參考「各災害規模及通報層級一覽表」與交通部相關通報標準。 | `"traffic_accident"` | `String`, Enum: `traffic_accident`, `rail_accident` |
+| 陸上交通事故 | `traffic:blockage` | 描述交通中斷情況，對應公路與鐵路災情通報要件。 | `"雙向交通阻斷"` | `String` |
+| **人為災害 (管線、化學品)** | `incident:type` | 參考「各災害規模及通報層級一覽表」與人為災害分類。 | `"gas_leak"` | `String`, Enum: `gas_leak`, `oil_spill`, `chemical_spill`, `power_outage` |
+| 人為災害 (管線、化學品) | `pollution:area_sqm` | 量化污染影響範圍，對應災情通報標準（陸域污染面積）。 | `12000` | `Integer` |
+| **通用災情回報** | `casualties:death` | 所有災害共通的關鍵災情指標，對應各類災害救助標準與通報層級。 | `3` | `Integer` |
+| 通用災情回報 | `casualties:missing` | 對應「失蹤救助」與災情通報標準。 | `2` | `Integer` |
+| 通用災情回報 | `casualties:injured_severe` | 對應「重傷救助」與災情通報標準。 | `5` | `Integer` |
 | 通用災情回報 | `casualties:injured_light` | 災情統計欄位。 | `10` | `Integer` |
-| 通用災情回報 | `casualties:trapped` | 關鍵應變資訊，對應震災等通報要件（有人員受困） [3, 6]。 | `8` | `Integer` |
+| 通用災情回報 | `casualties:trapped` | 關鍵應變資訊，對應震災等通報要件（有人員受困）。 | `8` | `Integer` |
 | **資源協調** | `request:item` | 應變階段的資源管理需求。 | `"water_pump"` | `String` |
 | 資源協調 | `dispatch:resource_id` | 追蹤已派遣的資源，形成應變行動的閉環。 | `"pump-truck-03"` | `String` |
 | **災後復原** | `project:type` | 追蹤長期復原工作的類型。 | `"infrastructure"` | `String`, Enum: `infrastructure`, `housing`, `economic` |
